@@ -44,10 +44,10 @@ const Navbar = ({ router }) => {
           <li key={nav.text}>
             <Link href={nav.href}>
               <a
-                className={`nav-item ${
+                className={`nav-item hover:scale-x-110  ${
                   router.pathname == nav.href
-                    ? 'active font-[700] cursor-pointer text-black hover:scale-x-150 z-30'
-                    : 'font-[700] mr-2 text-black hover:scale-x-150 z-30'
+                    ? 'active font-[700] cursor-pointer text-black z-30'
+                    : 'font-[700] mr-2 text-black hover:scale-x-110 z-30'
                 }`}
                 duration={500}
               >
