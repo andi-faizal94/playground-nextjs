@@ -21,7 +21,6 @@ const navs = [
 const Navbar = ({ router }) => {
   const [nav, setNav] = useState(false);
   const handleClick = (e) => {
-    e.preventDefault();
     setNav(!nav);
   };
   return (
