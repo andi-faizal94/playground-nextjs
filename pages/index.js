@@ -116,7 +116,7 @@ export default function Home() {
       {/* galeri */}
       <div className='flex flex-col justify-center items-center mt-10 mb-10'>
         <h1 className='font-extrabold text-xl md:text-5xl mb-4'>
-          <span className='text-yellow-600'>Music</span>Say Things
+          <span className='text-yellow-600'>Music </span>Say Things
         </h1>
         <Image
           // className='object-cover'
