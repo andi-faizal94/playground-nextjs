@@ -92,10 +92,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row bg-[#e7e7d8] items-center w-screen mt-32 h-96'>
+      <div className='flex flex-col md:flex-row bg-[#e7e7d8] items-center w-screen mt-32 h-96 p-4'>
         <div className='w-6/12 md:-mt-96 h-full'>
           <Image
-            // className='object-cover'
             src='/person.png'
             alt='image behance'
             width={753}
@@ -110,7 +109,9 @@ export default function Home() {
           <h1 className='font-[Montserrat] font-semibold text-3xl'>
             with your heartbeats.
           </h1>
-          <p className='font-[Opens-Sans]'>Edward Linkedstein - Designer</p>
+          <p className='font-[Opens-Sans] text-xs md:text-sm'>
+            Edward Linkedstein - Designer
+          </p>
         </div>
       </div>
       {/* galeri */}
@@ -119,7 +120,6 @@ export default function Home() {
           <span className='text-yellow-600'>Music </span>Say Things
         </h1>
         <Image
-          // className='object-cover'
           src='/Vector 4.png'
           alt='image behance'
           width={234}
@@ -131,7 +131,6 @@ export default function Home() {
       {/* image galeri */}
       <div className='grid grid-col-1 md:grid-cols-3 px-4 md:px-48 mb-20'>
         <Image
-          // className='object-cover'
           src='/Rectangle 6.png'
           alt='image behance'
           width={464}
@@ -139,7 +138,6 @@ export default function Home() {
           objectFit='contain'
         />{' '}
         <Image
-          // className='object-cover'
           src='/Rectangle 7.png'
           alt='image behance'
           width={464}
@@ -147,7 +145,6 @@ export default function Home() {
           objectFit='contain'
         />{' '}
         <Image
-          // className='object-cover'
           src='/Rectangle 8.png'
           alt='image behance'
           width={464}
@@ -155,7 +152,6 @@ export default function Home() {
           objectFit='contain'
         />{' '}
         <Image
-          // className='object-cover'
           src='/Rectangle 10.png'
           alt='image behance'
           width={464}
@@ -163,7 +159,6 @@ export default function Home() {
           objectFit='contain'
         />{' '}
         <Image
-          // className='object-cover'
           src='/Rectangle 11.png'
           alt='image behance'
           width={464}
@@ -171,7 +166,6 @@ export default function Home() {
           objectFit='contain'
         />{' '}
         <Image
-          // className='object-cover'
           src='/Rectangle 12.png'
           alt='image behance'
           width={464}
@@ -191,13 +185,13 @@ export default function Home() {
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim{' '}
         </p>
 
-        <form className='my-5 mb-5'>
+        <form className='flex flex-col md:flex-row my-5 mb-5'>
           <input
             className='outline px-7 py-2'
             type='text'
             placeholder='Enter Your Email'
           />
-          <button className='bg-yellow-500 px-7 py-2 text-white'>
+          <button className='bg-yellow-500 px-7 py-2 text-white mx-auto w-1/2 md:w-full'>
             Subcribe
           </button>
         </form>
@@ -205,7 +199,6 @@ export default function Home() {
         <div className='flex items-center space-x-5'>
           <div>
             <Image
-              // className='object-cover'
               src='/whatsapp.png'
               alt='image behance'
               width={25}
@@ -215,8 +208,6 @@ export default function Home() {
           </div>
           <div>
             <Image
-              // className='object-cover'
-
               src='/029-instagram 1.png'
               alt='image behance'
               width={25}
@@ -226,7 +217,6 @@ export default function Home() {
           </div>
           <div>
             <Image
-              // className='object-cover'
               src='/twitter.png'
               alt='image behance'
               width={25}
@@ -236,7 +226,6 @@ export default function Home() {
           </div>
           <div>
             <Image
-              // className='object-cover'
               src='/dribbble (1).png'
               alt='image behance'
               width={25}
@@ -246,7 +235,6 @@ export default function Home() {
           </div>
           <div>
             <Image
-              // className='object-cover'
               src='/behance 2.png'
               alt='image behance'
               width={25}

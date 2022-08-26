@@ -29,7 +29,7 @@ const Navbar = ({ router }) => {
         <Link href='/' duration={500}>
           <a>
             <h1 className='text-black font-[700] hover:scale-x-110'>
-              Ant
+              Ants
               <span className='text-orange-400 font-bold font-serif '>
                 Theme
               </span>
