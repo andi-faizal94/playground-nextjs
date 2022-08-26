@@ -113,6 +113,149 @@ export default function Home() {
           <p className='font-[Opens-Sans]'>Edward Linkedstein - Designer</p>
         </div>
       </div>
+      {/* galeri */}
+      <div className='flex flex-col justify-center items-center mt-10 mb-10'>
+        <h1 className='font-extrabold text-xl md:text-5xl mb-4'>
+          <span className='text-yellow-600'>Music</span>Say Things
+        </h1>
+        <Image
+          // className='object-cover'
+          src='/Vector 4.png'
+          alt='image behance'
+          width={234}
+          height={12}
+          objectFit='contain'
+        />
+      </div>
+
+      {/* image galeri */}
+      <div className='grid grid-col-1 md:grid-cols-3 px-4 md:px-48 mb-20'>
+        <Image
+          // className='object-cover'
+          src='/Rectangle 6.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />{' '}
+        <Image
+          // className='object-cover'
+          src='/Rectangle 7.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />{' '}
+        <Image
+          // className='object-cover'
+          src='/Rectangle 8.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />{' '}
+        <Image
+          // className='object-cover'
+          src='/Rectangle 10.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />{' '}
+        <Image
+          // className='object-cover'
+          src='/Rectangle 11.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />{' '}
+        <Image
+          // className='object-cover'
+          src='/Rectangle 12.png'
+          alt='image behance'
+          width={464}
+          height={445}
+          objectFit='contain'
+        />
+      </div>
+
+      <div className='bg-black flex flex-col justify-center items-center py-20'>
+        <h1 className='text-white font-extrabold text-4xl my-5 mb-5'>
+          Ant<span className='text-yellow-600'>stheme</span>
+        </h1>
+        <p className='text-white text-center my-5 mb-5'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor
+          <br />
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim{' '}
+        </p>
+
+        <form className='my-5 mb-5'>
+          <input
+            className='outline px-7 py-2'
+            type='text'
+            placeholder='Enter Your Email'
+          />
+          <button className='bg-yellow-500 px-7 py-2 text-white'>
+            Subcribe
+          </button>
+        </form>
+
+        <div className='flex items-center space-x-5'>
+          <div>
+            <Image
+              // className='object-cover'
+              src='/whatsapp.png'
+              alt='image behance'
+              width={25}
+              height={25}
+              objectFit='cover'
+            />
+          </div>
+          <div>
+            <Image
+              // className='object-cover'
+
+              src='/029-instagram 1.png'
+              alt='image behance'
+              width={25}
+              height={25}
+              objectFit='cover'
+            />
+          </div>
+          <div>
+            <Image
+              // className='object-cover'
+              src='/twitter.png'
+              alt='image behance'
+              width={25}
+              height={25}
+              objectFit='cover'
+            />
+          </div>
+          <div>
+            <Image
+              // className='object-cover'
+              src='/dribbble (1).png'
+              alt='image behance'
+              width={25}
+              height={25}
+              objectFit='cover'
+            />
+          </div>
+          <div>
+            <Image
+              // className='object-cover'
+              src='/behance 2.png'
+              alt='image behance'
+              width={25}
+              height={25}
+              objectFit='cover'
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
