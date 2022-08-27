@@ -9,16 +9,15 @@ import {
 import Image from 'next/image';
 import { HiOutlineMail } from 'react-icons/hi';
 import Link from 'next/link';
-import { withRouter } from 'next/router';
 
-const navs = [
-  { text: 'Home', href: '' },
-  { text: 'Portofolio', href: '' },
-  { text: 'Pages', href: '' },
-  { text: 'Pricing', href: '' },
-  { text: 'Services', href: '' },
-];
-const Navbar = ({ router }) => {
+// const navs = [
+//   { text: 'Home', href: '' },
+//   { text: 'Portofolio', href: '' },
+//   { text: 'Pages', href: '' },
+//   { text: 'Pricing', href: '' },
+//   { text: 'Services', href: '' },
+// ];
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = (e) => {
     setNav(!nav);
@@ -39,23 +38,32 @@ const Navbar = ({ router }) => {
       </div>
 
       {/* menu */}
-      <ul className='hidden md:flex'>
-        {navs.map((nav) => (
-          <li key={nav.text}>
-            <Link href={nav.href}>
-              <a
-                className={`nav-item hover:scale-x-110  ${
-                  router.pathname == nav.href
-                    ? 'active font-[700] cursor-pointer text-black z-30'
-                    : 'font-[700] mr-2 text-black hover:scale-x-110 z-30'
-                }`}
-                duration={500}
-              >
-                {nav.text}
-              </a>
-            </Link>
-          </li>
-        ))}
+      <ul className='hidden md:flex space-x-3'>
+        <li>
+          <a href='#home' duration={500}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href='#portofolio' duration={500}>
+            Portofolio
+          </a>
+        </li>
+        <li>
+          <a href='#pages' duration={500}>
+            Pages
+          </a>
+        </li>
+        <li>
+          <a href='#pricing' duration={500}>
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href='#services' duration={500}>
+            Services
+          </a>
+        </li>
       </ul>
 
       <ul className='hidden md:flex'>
@@ -101,27 +109,39 @@ const Navbar = ({ router }) => {
         className={
           !nav
             ? 'hidden'
-            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center z-10'
+            : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center z-10'
         }
       >
-        {navs.map((nav) => (
-          <li key={nav.text}>
-            <Link href={nav.href}>
-              <a
-                className={`nav-item ${
-                  router.pathname == nav.href
-                    ? 'active py-6 text-4xl scroll-smooth hover:text-gray-100 duration-75'
-                    : 'py-6 text-4xl scroll-smooth hover:text-gray-100 duration-75'
-                }`}
-              >
-                {nav.text}
-              </a>
-            </Link>
-          </li>
-        ))}
+        {/* <ul className='flex flex-col'> */}
+        <li>
+          <a className='text-white' href='#home' duration={500}>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href='#portofolio' duration={500}>
+            Portofolio
+          </a>
+        </li>
+        <li>
+          <a href='#pages' duration={500}>
+            Pages
+          </a>
+        </li>
+        <li>
+          <a href='#pricing' duration={500}>
+            Pricing
+          </a>
+        </li>
+        <li>
+          <a href='#services' duration={500}>
+            Services
+          </a>
+        </li>
+        {/* </ul> */}
       </ul>
     </nav>
   );
 };
 
-export default withRouter(Navbar);
+export default Navbar;

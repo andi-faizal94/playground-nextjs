@@ -1,9 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
 
-const MainContent = () => {
+const MainContent = ({ id }) => {
   return (
-    <div className='relative flex flex-col justify-center items-center min-h-screen'>
+    <div
+      className='relative flex flex-col justify-center items-center min-h-screen'
+      id={id}
+    >
       <h1 className='text-[Montserrat] text-center font-semibold text-5xl mt-14 mb-5'>
         Playing The Mood !
       </h1>

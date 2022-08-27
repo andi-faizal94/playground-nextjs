@@ -7,18 +7,14 @@ import MainContent from '../components/MainContent';
 export default function Home() {
   const [dataPost, setDataPost] = useState([]);
 
-  // allpost.getAllPost().then((res) => setDataPost(res));
-
-  // const add = useCallback(() => {}, []);
-
   return (
     <div className='bg-[#F2F2EA]'>
       <div className='md:px-24 py-4 bg-[#F2F2EA]'>
         <Navbar />
-        <MainContent />
+        <MainContent id='portofolio' />
         <div
-          // style={{ width: 1505 }}
           className='mx-auto flex flex-col md:flex-row items-center space-y-4 md:justify-between md:w-5/6 md:h-36 bg-[#C37CB4] py-4 px-16'
+          id='pages'
         >
           <div className='flex flex-col md:flex-row space-y-4 md:space-x-4'>
             <Image
